@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  background: white;
+}
+
+.track {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.track img {
+  height: 80px;
+  margin-right: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="track" id="track">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/i9333a5c2cf25058b/version/1781542337/image.png">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/i74324ffd2fef5cd6/version/1781542385/image.png">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/i7c94d3e6f0a7da5d/version/1781542432/image.png">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/ia690a9f5933b10c8/version/1781542471/image.png">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/i738ca521b6d8311a/version/1781542500/image.png">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/i31b147b5ea25e6d2/version/1781542537/image.png">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/i7153ee5d96aba344/version/1781542639/image.png">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/i194b7cc89174db40/version/1781542721/image.png">
+  <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s8187cf3068005231/image/i34933b5731b356e5/version/1781542753/image.png">
+</div>
+
+<script>
+const track = document.getElementById("track");
+
+track.innerHTML += track.innerHTML;
+
+let pos = 0;
+let pause = false;
+
+// arrêt au survol du bandeau
+track.addEventListener("mouseenter", () => {
+  pause = true;
+});
+
+// reprise lorsque la souris quitte le bandeau
+track.addEventListener("mouseleave", () => {
+  pause = false;
+});
+
+function animate() {
+
+  if (!pause) {
+    pos -= 0.6;
+    track.style.transform = "translateX(" + pos + "px)";
+  }
+
+  if (Math.abs(pos) > track.scrollWidth / 2) {
+    pos = 0;
+  }
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+</body>
+</html>
