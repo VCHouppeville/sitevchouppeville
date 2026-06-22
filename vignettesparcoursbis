@@ -1,0 +1,185 @@
+<style>
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+}
+
+.catalogue-parcours{
+max-width:1200px;
+margin:auto;
+}
+
+.catalogue-header{
+text-align:center;
+padding:20px;
+margin-bottom:30px;
+background:#f5f7fa;
+border-radius:15px;
+}
+
+.catalogue-header h2{
+margin:0;
+color:#0056a6;
+}
+
+.catalogue-header p{
+margin-top:10px;
+color:#666;
+}
+
+.filtres{
+text-align:center;
+margin-bottom:25px;
+}
+
+.filtres button{
+padding:8px 16px;
+margin:5px;
+border:none;
+border-radius:20px;
+cursor:pointer;
+background:#e9ecef;
+}
+
+.filtres button:hover{
+background:#0056a6;
+color:white;
+}
+
+.grille{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.carte{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 3px 12px rgba(0,0,0,0.12);
+transition:0.3s;
+text-decoration:none;
+color:inherit;
+}
+
+.carte:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.carte img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.infos{
+padding:15px;
+}
+
+.numero{
+font-size:20px;
+font-weight:bold;
+text-align:center;
+color:#0056a6;
+}
+
+.stats{
+display:flex;
+justify-content:space-between;
+margin:15px 0;
+font-size:14px;
+}
+
+.difficulte{
+text-align:center;
+margin-top:10px;
+font-weight:bold;
+}
+
+.facile{
+color:green;
+}
+
+.moyen{
+color:#d97a00;
+}
+
+.difficile{
+color:red;
+}
+
+.bouton{
+display:block;
+text-align:center;
+margin-top:15px;
+padding:10px;
+background:#0056a6;
+color:white;
+border-radius:25px;
+}
+
+</style>
+
+<div class="catalogue-parcours">
+
+<div class="catalogue-header">
+<h2>🚴 Parcours Cyclotouristes</h2>
+<p>Découvrez tous nos itinéraires et téléchargez les fichiers GPX.</p>
+</div>
+
+<div class="grille">
+
+<a href="https://vchouppeville.jimdofree.com/les-parcours/les-03/parcours-03-0x/?preview_sid=658285%2F#03-01" class="carte">
+
+<img src="https://image.jimcdn.com/app/cms/image/transf/dimension=421x10000:format=jpg/path/s8187cf3068005231/image/i5e780c1516f749ed/version/1782032394/image.jpg">
+
+<div class="infos">
+
+<div class="numero">03-01</div>
+
+<div class="stats">
+<span>🚴 26,5 km</span>
+<span>⛰️ 123 m</span>
+</div>
+
+<div class="difficulte facile">
+🟢 Facile
+</div>
+
+<div class="bouton">
+Voir le parcours
+</div>
+
+</div>
+
+</a>
+
+<a href="URL-PARCOURS-0302" class="carte">
+
+<img src="IMAGE-0302.jpg">
+
+<div class="infos">
+
+<div class="numero">03-02</div>
+
+<div class="stats">
+<span>🚴 26,5 km</span>
+<span>⛰️ 250 m</span>
+</div>
+
+<div class="difficulte moyen">
+🟠 Moyen
+</div>
+
+<div class="bouton">
+Voir le parcours
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
