@@ -1,0 +1,51 @@
+<style>
+  /* Style de la liste de boutons */
+  .menu-club-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espace entre les boutons */
+    max-width: 500px; /* Largeur maximale de la liste */
+    margin: 20px auto; /* Centre la liste sur la page */
+    font-family: Arial, sans-serif;
+  }
+
+  /* Style de chaque titre/bouton */
+  .bouton-club {
+    display: block;
+    padding: 15px 20px;
+    background-color: #f8f9fa; /* Fond gris très clair */
+    color: #333333; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement automatique des liens */
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 5px solid #cccccc; /* Barre grise discrète à gauche */
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease; /* Animation fluide */
+  }
+
+  /* Effet au passage de la souris */
+  .bouton-club:hover {
+    background-color: #ffffff; /* Le fond devient blanc */
+    color: #0076df; /* Le texte devient bleu */
+    border-left-color: #0076df; /* La barre à gauche devient bleue */
+    box-shadow: 0 4px 10px rgba(0,118,223,0.15); /* Léger halo bleu */
+    transform: translateX(8px); /* Le bouton se décale un peu vers la droite */
+  }
+</style>
+
+<div class="menu-club-container">
+
+  <a href="URL_DE_LA_PAGE_MOT" class="bouton-club">
+    ✉️ Le mot de la Présidente
+  </a>
+
+  <a href="URL_DE_LA_PAGE_BUREAU" class="bouton-club">
+    🚴‍♂️ Le Bureau et les Bénévoles
+  </a>
+
+  <a href="URL_DE_LA_PAGE_REGLEMENTS" class="bouton-club">
+    📜 Documents officiels & Règlements
+  </a>
+
+</div>
