@@ -1,1 +1,41 @@
+<!-- Partie Style : Ce code dit à Jimdo comment animer les paragraphes -->
+<style>
+  .mon-texte-long p {
+    background-color: #fcfcfc;       /* Fond de base très légèrement grisé */
+    border: 1px solid #eeeeee;       /* Bordure très claire et fine */
+    border-left: 3px solid #ccc;     /* Petite ligne à gauche pour structurer */
+    padding: 15px 20px;              /* Espace à l'intérieur de l'encadré */
+    margin-bottom: 20px;             /* Espace entre les paragraphes */
+    border-radius: 18px;              /* Angles légèrement arrondis */
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333333;
+    transition: all 0.3s ease;       /* Rend l'effet au survol tout doux */
+  }
 
+  /* L'effet magique au passage de la souris */
+  .mon-texte-long p:hover {
+    background-color: #ffffff;       /* Le fond devient tout blanc */
+    border-color: #0076df;           /* La bordure fine devient bleue (couleur Jimdo par défaut) */
+    border-left-color: #0076df;      /* La ligne de gauche devient bleue aussi */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Un léger ombrage apparaît pour donner du relief */
+    transform: translateX(5px);      /* Le paragraphe se décale de 5px vers la droite */
+  }
+</style>
+
+<!-- Partie Contenu : Placez votre texte à l'intérieur de cette zone -->
+<div class="mon-texte-long">
+
+  <p>
+    <strong>Voici votre premier paragraphe.</strong> Lorsque vous passerez votre souris dessus, vous verrez qu'il s'anime en douceur. La bordure s'illumine et l'encadré se décale légèrement pour capter l'attention du lecteur.
+  </p>
+
+  <p>
+    Ceci est votre deuxième paragraphe. Cette méthode est idéale pour les longs articles, car elle permet de "focaliser" visuellement l'œil de l'utilisateur sur la section qu'il est en train de lire, sans pour autant surcharger le design général de votre site Jimdo.
+  </p>
+
+  <p>
+    Vous pouvez ajouter autant de paragraphes que vous le souhaitez à la suite, tant qu'ils restent bien coupés par les balises avec un "p" entre chevrons. Tout s'appliquera automatiquement !
+  </p>
+
+</div>
