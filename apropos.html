@@ -1,0 +1,56 @@
+<head>
+<style>
+/* Conteneur pour l'intégration sous les partenaires */
+.conteneur-apropos {
+    margin: 30px 0;
+    text-align: left; /* Changez par 'center' si vous préférez le centrer */
+}
+
+/* Style du bouton "À propos" */
+.lien-apropos {
+    display: inline-block;
+    color: #333; /* Couleur initiale bien visible */
+    font-size: 22px; /* Grand et texturé pour attirer l'œil */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+}
+
+/* L'effet Spécial au survol (Hover) */
+.lien-apropos:hover {
+    color: #0b7dda; /* Changement de couleur flash */
+    letter-spacing: 3px; /* Effet de glissement/écartement des lettres */
+    border-color: #0b7dda; /* Un cadre bleu apparaît */
+    box-shadow: 0 4px 15px rgba(11, 125, 218, 0.2); /* Légère lueur bleue */
+    background-color: rgba(11, 125, 218, 0.03); /* Fond très légèrement teinté */
+}
+
+/* Optionnel : petite flèche discrète qui glisse après le texte au survol */
+.lien-apropos::after {
+    content: ' →';
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.lien-apropos:hover::after {
+    opacity: 1;
+    padding-left: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="conteneur-apropos">
+    <a href="https://vchouppeville.github.io/sitevchouppeville/lestitresapropos.html" class="lien-apropos" title="En savoir plus à propos de nous">
+        À propos
+    </a>
+</div>
+
+</body>
